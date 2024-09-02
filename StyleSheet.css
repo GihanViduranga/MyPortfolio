@@ -26,3 +26,17 @@ header{
 
     display: block;
 }
+/*Background Colour Added*/
+.home{
+    background: #e8cbc0;
+    background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
+    background: linear-gradient(to right, #e8cbc0, #636fa4);
+    padding: 1px;
+}
+/*Google Font Added*/
+* {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal
+}
