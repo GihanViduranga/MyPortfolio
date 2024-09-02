@@ -40,3 +40,22 @@ header{
     font-weight: 400;
     font-style: normal
 }
+/*AboutMe Create Under the Nav Bar*/
+.aboutMe{
+    margin-top: 60px;
+}
+#main{
+    margin: 0 auto;
+}
+#AboutMeHeight{
+    height: 60px;
+}
+/*Image Of Landing Page*/
+#ImgF{
+    margin-top: 60px;
+}
+.welcome{
+    display: flex;
+    justify-content: end;
+}
+
