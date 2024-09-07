@@ -1,6 +1,10 @@
+html {
+    scroll-behavior: smooth;
+}
 /*Nave Bar Creation*/
 header{
-    background-color: rgba(0, 0, 0, 0.3);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(93,93,93,1) 0%, rgba(255,255,255,1) 100%);
     position:fixed;
     height: 60px;
     width: 100%;
@@ -20,17 +24,15 @@ header{
     align-items: center;
 }
 .menu>ul>li>a{
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 5px 20px;
-
     display: block;
 }
 /*Background Colour Added*/
 .home{
-    background: #e8cbc0;
-    background: -webkit-linear-gradient(to right, #e8cbc0, #636fa4);
-    background: linear-gradient(to right, #e8cbc0, #636fa4);
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(93,93,93,1) 100%, rgba(255,255,255,1) 100%);
     padding: 1px;
 }
 /*Google Font Added*/
@@ -40,21 +42,38 @@ header{
     font-weight: 400;
     font-style: normal
 }
-/*AboutMe Create Under the Nav Bar*/
-.aboutMe{
-    margin-top: 60px;
+/*About me frame fix*/
+#AboutMe {
+    scroll-margin-top: 70px;
 }
-#main{
-    margin: 0 auto;
-}
-#AboutMeHeight{
-    height: 60px;
-}
-/*Image Of Landing Page*/
+/*Front image*/
 #ImgF{
     margin-top: 60px;
 }
-.welcome{
+#frontPage{
+height: 1000px;
+    width: 100%
+}
+#photo>div:nth-child(2){
+    width: 950px;
+    height: 200px;
+    position: relative;
+}
+#intro>div{
+    width: 600px;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#intro>div>h2{
+    font-size: 60px;
+}
+#photo{
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
 }
