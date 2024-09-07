@@ -98,3 +98,22 @@ header{
     height: 30px;
     border-radius: 10px;
 }
+/*Added to every section to scroll margin*/
+#Education{
+    scroll-margin-top: 70px;
+}
+#Skill{
+    scroll-margin-top: 70px;
+}
+#Assignment{
+    scroll-margin-top: 70px;
+}
+#Projects{
+    scroll-margin-top: 70px;
+}
+#Gallery{
+    scroll-margin-top: 70px;
+}
+#Contact{
+    scroll-margin-top: 70px;
+}
