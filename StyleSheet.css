@@ -32,12 +32,16 @@ header{
 }
 .navNames{
     display: flex;
-    margin-left: 700px;
+    margin-left: 900px;
+}
+.navbar{
+    position: absolute;
 }
 #NavbarNames>li:hover{
     transform: scale(1.3);
     transition: background 1s ease;
 }
+
 /*Background Colour Added*/
 .home{
     background: rgb(255,255,255);
@@ -52,55 +56,42 @@ header{
     font-style: normal
 }
 /*About me frame fix*/
-#AboutMe {
+#AboutMeHeight {
     scroll-margin-top: 70px;
 }
 /*Front image*/
+#HomeGrid{
+    display: grid;
+    height: 750px;
+    top: 60px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column: 1/3;
+    margin-bottom: 55px;
+}
 #ImgF{
-    margin-top: 60px;
-}
-#frontPage{
-    height: 800px;
-    width: 100%
-}
-#photo>div:nth-child(2){
-    width: 950px;
-    height: 200px;
-    position: relative;
-}
-#intro>div{
-    width: 600px;
-    height: 200px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
-#intro>div>h2{
-    font-size: 60px;
-}
-#photo{
     display: flex;
     justify-content: center;
+    margin-top: 30px;
+}
+#intro{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/4;
     align-items: center;
+    font-size: 35px;
+    justify-content: start;
+    text-align: center;
 }
-/*create social icons*/
-#social{
-    margin-left: 250px;
+#social\&button{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
-/*button hover and position hire me*/
-#HireMe:hover{
-    background-color: black;
-    color: white;
-}
-#HireMe{
-    margin-top: 15px;
-    margin-left: 290px;
-    width: 125px;
-    height: 30px;
-    border-radius: 10px;
+#button{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 /*Added to every section to scroll margin*/
 #Education{
@@ -133,4 +124,145 @@ header{
     text-align: center;
     padding: 20px;
     bottom: 0;
+}
+/* button */
+.button-86 {
+    all: unset;
+    width: 100px;
+    height: 20px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    z-index: 1;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+.button-86::after,
+.button-86::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -99999;
+    transition: all .4s;
+}
+.button-86::before {
+    transform: translate(0%, 0%);
+    width: 100%;
+    height: 100%;
+    background: black;
+    border-radius: 10px;
+}
+.button-86::after {
+    transform: translate(10px, 10px);
+    width: 35px;
+    height: 35px;
+    background: #ffffff15;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 50px;
+}
+.button-86:hover::before {
+    transform: translate(5%, 20%);
+    width: 110%;
+    height: 110%;
+}
+.button-86:hover::after {
+    border-radius: 10px;
+    transform: translate(0, 0);
+    width: 100%;
+    height: 100%;
+}
+.button-86:active::after {
+    transition: 0s;
+    transform: translate(0, 5%);
+}
+/*About Me*/
+.aboutMe{
+    display: grid;
+    height: 700px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border: 2px solid red;
+}
+#Heading{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    border: 2px solid red;
+    font-size: 30px;
+    justify-content: center;
+    align-items: end;
+    padding-top: 100px;
+}
+#AboutImg{
+    display: flex;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    border: 2px solid red;
+    justify-content: center;
+    margin-top: 115px;
+}
+#AboutImg>img{
+    width: 500px;
+    height: 500px;
+}
+#AboutPara{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 2/4;
+    border: 2px solid red;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+#AboutButton{
+    display: flex;
+    grid-column: 1/2;
+    grid-row: 4/5;
+    border: 2px solid red;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+/* Mobile Small (320px to 374px) */
+@media (min-width: 320px) and (max-width: 374px) {
+
+}
+
+/* Mobile Medium (375px to 424px) */
+@media (min-width: 375px) and (max-width: 424px) {
+    /* Styles for mobile medium devices */
+}
+
+/* Mobile Large (425px to 767px) */
+@media (min-width: 425px) and (max-width: 767px) {
+    /* Styles for mobile large devices */
+}
+
+/* Tablet (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Styles for tablets */
+}
+
+/* Laptop (1024px to 1439px) */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    /* Styles for laptops */
+}
+
+/* Laptop Large (1440px and up) */
+@media (min-width: 1440px) {
+    /* Styles for large laptops*/
 }
