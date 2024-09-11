@@ -41,12 +41,32 @@ header{
     transform: scale(1.3);
     transition: background 1s ease;
 }
+#frontPage{
+    position: relative;
+}
+.video-background {
+    position: absolute; /* Fix it in place */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Hide any overflow */
+    z-index: -1;
+}
+#bgVideo {
+    width: 100%;
+    height: 900px;
+    object-fit: cover; /* Ensures the video covers the container while maintaining aspect ratio */
+}
+#frontPage{
+}
 
 /*Background Colour Added*/
 .home{
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(93,93,93,1) 100%, rgba(255,255,255,1) 100%);
     padding: 1px;
+    margin-bottom: 60px;
 }
 /*Google Font Added*/
 * {
@@ -67,12 +87,12 @@ header{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column: 1/3;
-    margin-bottom: 55px;
+    margin-bottom: 121px;
 }
 #ImgF{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 #intro{
     display: flex;
@@ -92,6 +112,11 @@ header{
     display: flex;
     justify-content: center;
     padding: 20px;
+}
+#AboutHome{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(93,93,93,1) 100%, rgba(255,255,255,1) 100%);
+    padding: 1px;
 }
 /*Added to every section to scroll margin*/
 #Education{
@@ -188,17 +213,18 @@ header{
 }
 /*About Me*/
 .aboutMe{
+    margin-top: 65px;
     display: grid;
     height: 700px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    border: 2px solid red;
+    border: 1px solid red;
+    padding-top: 60px;
 }
 #Heading{
     display: flex;
     grid-column: 1/2;
     grid-row: 1/2;
-    border: 2px solid red;
     font-size: 30px;
     justify-content: center;
     align-items: end;
@@ -208,7 +234,6 @@ header{
     display: flex;
     grid-column: 2/3;
     grid-row: 1/4;
-    border: 2px solid red;
     justify-content: center;
     margin-top: 115px;
 }
@@ -220,7 +245,6 @@ header{
     display: flex;
     grid-column: 1/2;
     grid-row: 2/4;
-    border: 2px solid red;
     font-size: 15px;
     text-align: center;
     align-items: center;
@@ -232,14 +256,140 @@ header{
     display: flex;
     grid-column: 1/2;
     grid-row: 4/5;
-    border: 2px solid red;
     justify-content: center;
     align-items: center;
     padding-bottom: 100px;
 }
 /* Mobile Small (320px to 374px) */
 @media (min-width: 320px) and (max-width: 374px) {
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(93,93,93,1) 0%, rgba(255,255,255,1) 100%);
+        position:fixed;
+        height: 40px;
+        width: 322px;
+        z-index: 90;
+    }
+    .Logo{
+        left: 5px;
+        top: -5px;
+        position: absolute;
+        margin-left: 10px;
+    }
+    .Logo>img{
+        width: 50px;
+        height: 50px;
+    }
+    #HomeGrid{
+        display: grid;
+        height: 500px;
+        top: 30px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column: 1/2;
+        margin-bottom: 55px;
 
+
+    }
+    #ImgF{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+    #ImgF>img{
+        width: 250px;
+        height: auto;
+        margin-right: -20px;
+    }
+    #intro{
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 2/5;
+        align-items: center;
+        font-size: 15px;
+        justify-content: start;
+        text-align: center;
+        margin-top: 90px;
+        margin-left: 45px;
+    }
+
+    .home{
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(93,93,93,1) 100%, rgba(255,255,255,1) 100%);
+        padding: 1px;
+        display: flex;
+        width: 100%;
+    }
+    #social\&button{
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        margin-top: 110px;
+        margin-left: 35px;
+    }
+    .aboutMe{
+        display: grid;
+        height: 800px;
+        width: 310px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+    }
+    #Heading{
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 15px;
+        justify-content: center;
+        align-items: end;
+        padding-top: 0px;
+        margin-right: 310px;
+    }
+    #AboutImg{
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 1/3;
+        justify-content: center;
+        margin-top: 400px;
+        margin-right: 350px;
+        align-items: center;
+    }
+    #AboutImg>img{
+        width: 250px;
+        height: 250px;
+        margin-bottom: 90px;
+        margin-left: 35px;
+    }
+    #AboutPara{
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-size: 10px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-top: 130px;
+    }
+    #AboutPara>p{
+        margin-right: 310px;
+    }
+    #AboutButton{
+        display: flex;
+        grid-column: 1/2;
+        grid-row: 4/5;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;
+        margin-right: 310px;
+        margin-top: 50px;
+    }
 }
 
 /* Mobile Medium (375px to 424px) */
