@@ -14,7 +14,127 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
     <title>Gihan Viduranga</title>
+
+   <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+
+
+        /* Responsive Design */
+        /* Mobile Small (320px to 374px) */
+        @media (min-width: 320px) and (max-width: 374px) {
+            .container {
+                flex-direction: column;
+                padding: 10px;
+                gap: 20px;
+            }
+            .left h1 {
+                font-size: 2rem;
+            }
+            .left p {
+                font-size: 1rem;
+            }
+            .contact-info ul li {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Mobile Medium (375px to 424px) */
+        @media (min-width: 375px) and (max-width: 424px) {
+            .container {
+                flex-direction: column;
+                padding: 15px;
+            }
+            .left h1 {
+                font-size: 2.2rem;
+            }
+            .left p {
+                font-size: 1rem;
+            }
+            .contact-info ul li {
+                font-size: 1rem;
+            }
+        }
+
+        /* Mobile Large (425px to 767px) */
+        @media (min-width: 425px) and (max-width: 767px) {
+            .container {
+                flex-direction: column;
+                padding: 20px;
+            }
+            .left h1 {
+                font-size: 2.4rem;
+            }
+            .left p {
+                font-size: 1.1rem;
+            }
+            .contact-info ul li {
+                font-size: 1rem;
+            }
+        }
+
+        /* Tablet (768px to 1023px) */
+        @media (min-width: 768px) and (max-width: 1023px) {
+            .container {
+                padding: 25px;
+                flex-direction: row;
+            }
+            .left h1 {
+                font-size: 2.6rem;
+            }
+            .left p {
+                font-size: 1.2rem;
+            }
+            .contact-info ul li {
+                font-size: 1.1rem;
+            }
+            form input, form textarea {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Laptop (1024px to 1439px) */
+        @media (min-width: 1024px) and (max-width: 1439px) {
+            .container {
+                padding: 30px;
+            }
+            .left h1 {
+                font-size: 2.8rem;
+            }
+            .left p {
+                font-size: 1.2rem;
+            }
+            .contact-info ul li {
+                font-size: 1.1rem;
+            }
+        }
+
+        /* Laptop Large (1440px and up) */
+        @media (min-width: 1440px) {
+            .container {
+                padding: 50px;
+            }
+            .left h1 {
+                font-size: 3rem;
+            }
+            .left p {
+                font-size: 1.2rem;
+            }
+            .contact-info ul li {
+                font-size: 1.1rem;
+            }
+        }
+
+    </style>-->
 </head>
 <body>
 <header>
@@ -72,7 +192,7 @@
     <!-- About Me -->
     <section class="aboutMe" id="AboutMeHeight" >
         <div id="Heading" data-aos="fade-right">
-            <h1>About Me</h1>
+            <h1 class="londrina-outline-regular">About Me</h1>
         </div>
         <div id="AboutImg" data-aos="fade-right">
             <img src="Acessts/image/Ellipse%201.png">
@@ -92,7 +212,7 @@
     <section id="Education">
         <div>
             <div id="Edu">
-                <h1>Education</h1>
+                <h1 class="londrina-outline-regular">Education</h1>
             </div>
             <div id="School">
                 <img id="ScImg" src="Acessts/image/St.Jhon's%20Collage.png" title="School" alt="School-Logo" width="200">
@@ -220,25 +340,30 @@
 </main>
 <main class="home">
     <!-- Gallery -->
-    <section id="Gallery">
-        <div>
-            <h1 id="Gal">Gallery</h1>
+    <div class="wrapper" id="Gallery">
+        <div class="items">
+            <div class="item" tabindex="0" style="background-image: url(Acessts/image/1.jpg)"></div>
+            <div class="item" tabindex="0" style="background-image: url(Acessts/image/2.jpg)"></div>
+            <div class="item" tabindex="0" style="background-image: url(Acessts/image/3.jpg)"></div>
+            <div class="item" tabindex="0" style="background-image: url(Acessts/image/4.jpg)"></div>
+            <div class="item" tabindex="0" style="background-image: url(Acessts/image/5.jpg)"></div>
+            <div class="item" tabindex="0" style="background-image: url(Acessts/image/6.jpg)"></div>
+            <div class="item" tabindex="0" style="background-image: url(Acessts/image/77.jpg)"></div>
+            <div class="item" tabindex="0" style="background-image: url(Acessts/image/88.jpg)"></div>
+            <div class="item" tabindex="0" style="background-image: url(Acessts/image/9.jpg)"></div>
+            <div class="item" tabindex="0" style="background-image: url(Acessts/image/10.jpg)"></div>
+            <div class="item" tabindex="0" style="background-image: url(Acessts/image/11.jpg)"></div>
+            <div class="item" tabindex="0" style="background-image: url(Acessts/image/12.jpg)"></div>
+
         </div>
-        <div>
-            <img src="Acessts/image/1.jpg" title="My Image" alt="My Image" width="300">
-            <img src="Acessts/image/2.jpg" title="My Image" alt="My Image" width="300">
-            <img src="Acessts/image/3.jpg" title="My Image" alt="My Image" width="300">
-            <img src="Acessts/image/4.jpg" title="My Image" alt="My Image" width="300">
-            <img src="Acessts/image/5.jpg" title="My Image" alt="My Image" width="300">
-            <img src="Acessts/image/6.jpg" title="My Image" alt="My Image" width="600">
-            <img src="Acessts/image/7.jpg" title="My Image" alt="My Image" width="600">
-            <img src="Acessts/image/8.jpg" title="My Image" alt="My Image" width="300">
-        </div>
-    </section>
+    </div>
+
 </main>
-<main class="home">
-    <!-- Contact Me -->
-    <section id="Contact">
+<main class="ContactMe">
+     <!--Contact Me-->
+    <!--<section class="container">
+    <section id="Contact" class="contact-section">
+        <div class="left">
         <div>
             <h1 id="Con">Contact Me</h1>
         </div>
@@ -246,21 +371,56 @@
             <p>
                 Feel free to get in touch with me. I am always open to discussing new projects, creative ideas or opportunities to be part of your vision.
             </p>
+            <div class="contact-info">
             <h2>Contact Info</h2>
             <a><img src="Acessts/image/NameIcon.png" title="NameIcon" alt="Icon"><h3>M.A.Gihan Viduranga Wijerathna</h3></a>
             <a><img src="Acessts/image/Letter.png" title="Icon" alt="Icon"><h3>gihanvidu123@gmail.com</h3></a>
             <a><img src="Acessts/image/Phone.png" title="Icon" alt="Icon"><h3>+94 76 676 0016</h3></a>
             <a><img src="Acessts/image/Address.png" title="Icon" alt="Icon"><h3>No: 47/a1 Bandaragahawaththa,Tempal Road,Mastiya,Wadduwa </h3></a>
+            </div>
+        </div>
         </div>
     </section>
     <section>
-        <div>
+        <div class="right">
+            <form action="#" method="post">
             <input type="text" placeholder="Name"><br>
             <input type="email" placeholder="Email"><br>
             <input type="text" placeholder="Contact No"><br>
             <textarea placeholder="Message" rows="10" cols="20"></textarea><br>
             <br>
             <button>Submit</button>
+            </form>
+        </div>
+    </section>
+    </section>-->
+
+    <section class="contact-section" id="Contact">
+        <div class="container">
+            <div class="left">
+                <h1 >Contact Me</h1>
+                <p>Feel free to get in touch with me. I am always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+
+                <div class="contact-info">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-user"></i> M.A.Gihan Viduranga Wijerathna</li>
+                        <li><i class="fas fa-envelope"></i> gihanvidul123@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +94766760016</li>
+                        <li><i class="fas fa-map-marker-alt"></i> No : 47/A1 Bandaragahawaththa, Tempal Road, Mastiya, Wadduwa</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="right">
+                <form action="#" method="post">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="tel" name="contact" placeholder="Contact No" required>
+                    <textarea name="message" placeholder="Enter Message Here" required></textarea>
+                    <button class="button" type="submit">Submit</button>
+                </form>
+            </div>
         </div>
     </section>
 </main>
