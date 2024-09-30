@@ -434,6 +434,70 @@ button:hover {
     width: 300px;
     height: 175px;
 }
+/*<!-- Skill -->*/
+.carousel-wrapper {
+    --width: 200px;
+    --gap: 0;
+    --num-items: 10;
+    --ani-offset: calc(var(--width) * var(--num-items) * -1);
+    --ani-speed: 20s;
+
+    width: 1660px;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-wrapper::before,
+.carousel-wrapper::after{
+    content: '';
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+}
+.carousel-wrapper::before{
+    left: 0;
+    background-image: linear-gradient(to right,var() 0%,transparent 50%);
+}
+.carousel-wrapper::after{
+    right: 0;
+    background-image: linear-gradient(to left,var() 0%,transparent 50%);
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    animation: slide var(--ani-speed) linear infinite;
+}
+.item1{
+    flex: 1 0 var(--width);
+    text-align: center;
+    padding:1rem;
+}
+.item1:last-child{
+    /*background: red;*/
+}
+.item1 > img{
+    width: 99%;
+    height: auto;
+    object-fit: cover;
+}
+
+@keyframes slide {
+    100% {
+        transform: translateX(var(--ani-offset));
+    }
+}
+#Ski{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#Skill{
+    height: 700px;
+}
+
 /*galary*/
 :root{
     --index: calc(1vw + 1.5vh);
