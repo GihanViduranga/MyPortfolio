@@ -142,7 +142,7 @@ header{
     scroll-margin-top: 70px;
 }
 #Projects{
-    scroll-margin-top: 70px;
+    scroll-margin-top: 0;
 }
 #Gallery{
     scroll-margin-top: 50px;
@@ -156,8 +156,8 @@ header{
 /*create footer*/
 #Footer{
     display: block;
-    background: black;
-    color: white;
+    background: white;
+    color: black;
     text-align: center;
     padding: 20px;
     bottom: 0;
@@ -535,6 +535,115 @@ button:hover {
 .AssInside{
     display: flex;
     flex-direction: row;
+}
+/*project*/
+#Projects{
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: black;
+}
+#Name{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+.Cards{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.Card{
+    display: flex;
+    width: 33.3%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.DesNbtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#buttonP1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+}
+#buttonP2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+}
+#buttonP3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+}
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;/*
+    padding: 10px 25px;*/
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(255, 255, 255, 0.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.btn-16 {
+    border: none;
+    color: gray;
+}
+.btn-16:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow:
+            -7px -7px 20px 0px #fff9,
+            -4px -4px 5px 0px #fff9,
+            7px 7px 20px 0px rgba(0, 0, 0, 0.13),
+            4px 4px 5px 0px #000000;
+    transition: all 0.3s ease;
+}
+.btn-16:hover {
+    color: white;
+}
+.btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+.btn-16:active {
+    top: 2px;
 }
 /*galary*/
 :root{
