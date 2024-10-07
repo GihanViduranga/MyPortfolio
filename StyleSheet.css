@@ -53,13 +53,13 @@ header{
     text-decoration: none;
     padding: 5px 10px;
     display: block;
-    font-size: 15px;
+    font-size: 13px;
 }
 .FrontH{
     margin-bottom: 0;
 }
 .navNames{
-    margin-left: 900px;
+    margin-left: 800px;
 }
 .navbar{
     position: absolute;
@@ -2026,7 +2026,7 @@ body{
         display: block;
         height: 800px;
         padding: 20px;
-        width: 85.5%;
+        width: 90%;
         gap: 0;
     }
 
@@ -2061,7 +2061,7 @@ body{
     }
 
     form {
-        gap: 10px;
+        gap: 5px;
     }
 
     input, textarea {
@@ -4369,18 +4369,13 @@ body{
         text-decoration: none;
         padding: 5px 10px;
         display: block;
-        font-size: 25px;
-    }
-    .navNames>ul>li{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        font-size: 15px;
     }
     .FrontH{
         margin-bottom: 0;
     }
     .navNames{
-        margin-left: 1200px;
+        margin-left: 900px;
     }
     .navbar{
         position: absolute;
@@ -4398,7 +4393,7 @@ body{
     }
     .FrontH{
         height: 850px;
-        width: 161.7%;
+        width: 100%;
         background: black;
     }
 
@@ -4427,7 +4422,7 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 220px;
+        margin-left: 155px;
         width: 80%;
         height: 700px;
     }
@@ -4446,7 +4441,6 @@ body{
         text-align: end;
         font-size: 45px;
         color: white;
-        margin-left: 200px;
     }
     #intoPara{
         font-size: 15px;
@@ -4492,11 +4486,6 @@ body{
         text-align: center;
         padding: 20px;
         bottom: 0;
-        font-size: 25px;
-    }
-    #Footer>div>a>img{
-        width: 70px;
-        height: 70px;
     }
     body {
         background-color: #ffffff;
@@ -4523,8 +4512,8 @@ body{
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
         padding: 30px;
         border-radius: 10px;
-        width: 100%;
-        max-width: 1500px;
+        width: 90%;
+        max-width: 1100px;
         gap: 30px;
     }
 
@@ -4534,7 +4523,7 @@ body{
     }
 
     .left h1 {
-        font-size: 5rem;
+        font-size: 4rem;
         margin-top: 10px;
         color: #000000;
         text-shadow: 1px 1px 3px rgba(0, 0, 1, 0.9);
@@ -4544,13 +4533,13 @@ body{
     }
 
     .left p {
-        font-size: 2rem;
+        font-size: 1rem;
         margin-bottom: 20px;
         line-height: 1.6;
     }
 
     .contact-info h3 {
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 10px;
         text-shadow: 1px 1px 3px rgba(0, 0, 1, 0.9);
     }
@@ -4560,7 +4549,7 @@ body{
     }
 
     .contact-info ul li {
-        font-size: 1.8rem;
+        font-size: 0.9rem;
         margin-bottom: 10px;
         color: #2c2c2c;
     }
@@ -4575,12 +4564,9 @@ body{
     }
 
     form {
-        margin-top: 200px;
-        height: 500px;
         display: flex;
         flex-direction: column;
-        gap: 30px;
-        font-size: 1.5rem;
+        gap: 15px;
     }
 
     input, textarea {
@@ -4590,7 +4576,7 @@ body{
         border: none;
         background: #b0b9c4;
         color: #2c2c2c;
-        font-size: 1.9rem;
+        font-size: 1rem;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         resize: none;
     }
@@ -4600,7 +4586,7 @@ body{
     }
 
     textarea {
-        height: 190px;
+        height: 150px;
     }
 
     .buttonCon {
@@ -4608,11 +4594,10 @@ body{
         border: none;
         border-radius: 5px;
         background-color: #333;
-        margin-left: 300px;
+        margin-left: 200px;
         color: white;
-        font-size: 1.5rem;
-        width: 200px;
-        height: 60px;
+        font-size: 1.1rem;
+        width: 150px;
         cursor: pointer;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     }
@@ -4623,9 +4608,9 @@ body{
 
     /* CSS */
     .button-85 {
-        width: 250px;
-        height: 60px;
-        font-size: 22px;
+        width: 150px;
+        height: 40px;
+        font-size: 15px;
         border: none;
         outline: none;
         color: rgb(255, 255, 255);
@@ -4692,7 +4677,7 @@ body{
     }
     /*About Me*/
     .aboutMe {
-        height: 1000px;
+        height: 800px;
         color: black;
     }
     #AboutHome{
@@ -4710,12 +4695,12 @@ body{
     }
 
     #AboutImg>img {
-        width: 580px;
+        width: 480px;
     }
 
     #AboutPara {
         max-width: 600px;
-        font-size: 20px;
+        font-size: 16px;
         line-height: 1.5;
         margin-top: 50px;
         margin-bottom: 50px;
@@ -4734,7 +4719,7 @@ body{
     /*Education part*/
     #Education{
         background-color: black;
-        height: 2100px;
+        height: 1900px;
         width: 100%;
         color: white;
     }
@@ -4749,7 +4734,6 @@ body{
     .Education{
         display: flex;
         width: 100%;
-        font-size: 1.5em;
     }
     .EDU{
         display: flex;
@@ -4758,11 +4742,7 @@ body{
         align-items: center;
     }
     .para{
-        width: 700px;
-    }
-    .LSize{
-        justify-content: center;
-        align-items: center;
+        width: 500px;
     }
     #ScImg{
         width: 300px;
@@ -4790,7 +4770,6 @@ body{
         width: 300px;
         height: 175px;
     }
-
     /*<!-- Skill -->*/
     .carousel-wrapper {
         --width: 200px;
@@ -4799,7 +4778,7 @@ body{
         --ani-offset: calc(var(--width) * var(--num-items) * -1);
         --ani-speed: 20s;
 
-        width: 2330px;
+        width: 1660px;
         overflow: hidden;
         position: relative;
     }
@@ -4861,9 +4840,6 @@ body{
         background: white;
     }
     /*Assignments*/
-    #Assignment{
-        height: 1400px;
-    }
     #Ass{
         display: flex;
         width: 100%;
@@ -4882,7 +4858,6 @@ body{
         height: 350px;
         justify-content: space-evenly;
         align-items: center;
-        font-size: 1.5rem;
     }
     .AssignmentAll{
         display: flex;
@@ -4890,22 +4865,16 @@ body{
         text-align: center;
         flex-direction: column;
         align-items: center;
-
     }
     .AssInside{
         display: flex;
         flex-direction: row;
     }
-    .AssInside>img{
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-    }
     /*project*/
     #Projects{
         display: flex;
         flex-direction: column;
-        height: 1000px;
+        height: 900px;
         justify-content: center;
         align-items: center;
         color: white;
@@ -4932,8 +4901,6 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
-        font-size: 1.5rem;
-        margin-right: 10px;
     }
     .DesNbtn{
         display: flex;
@@ -4947,25 +4914,25 @@ body{
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 200px;
+        width: 150px;
     }
     #buttonP2{
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 200px;
+        width: 150px;
     }
     #buttonP3{
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 200px;
+        width: 150px;
     }
     .custom-btn {
         width: 130px;
-        height: 60px;
+        height: 40px;
         color: #fff;
         border-radius: 5px;
         font-family: 'Lato', sans-serif;
@@ -5013,7 +4980,7 @@ body{
     }
     /*galary*/
     :root{
-        --index: calc(1.5vw + 2vh);
+        --index: calc(1vw + 1.5vh);
         --transition: cubic-bezier(.1, .7, 0, 1);
     }
 
