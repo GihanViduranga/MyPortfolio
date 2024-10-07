@@ -4356,6 +4356,7 @@ body{
         display: none;
     }
     .navNames>ul{
+        width: 800px;
         list-style-type: none;
         right: 0;
         padding: 0;
@@ -4367,7 +4368,7 @@ body{
     .navNames>ul>li>a{
         color: black;
         text-decoration: none;
-        padding: 5px 10px;
+        padding: 5px 12px;
         display: block;
         font-size: 15px;
     }
@@ -4375,7 +4376,7 @@ body{
         margin-bottom: 0;
     }
     .navNames{
-        margin-left: 900px;
+        margin-left: 500px;
     }
     .navbar{
         position: absolute;
@@ -4494,7 +4495,7 @@ body{
     }
     .ContactMe{
         background: black;
-        width: 161.7%;
+        width: 100%;
     }
 
     .contact-section {
@@ -4681,7 +4682,7 @@ body{
         color: black;
     }
     #AboutHome{
-        width: 161.7%;
+        width: 100%;
         background-color: white;
     }
     #Heading {
@@ -4778,7 +4779,7 @@ body{
         --ani-offset: calc(var(--width) * var(--num-items) * -1);
         --ani-speed: 20s;
 
-        width: 1660px;
+        width: 1515px;
         overflow: hidden;
         position: relative;
     }
@@ -4831,7 +4832,7 @@ body{
         align-items: center;
     }
     .home{
-        width: 161.7%;
+        width: 100%;
     }
     #Skill{
         width: 100%;
