@@ -3596,7 +3596,7 @@ body{
         margin-bottom: 0;
     }
     .navNames{
-        margin-left: 900px;
+        margin-left: 550px;
     }
     .navbar{
         position: absolute;
@@ -4313,19 +4313,20 @@ body{
 @media (min-width: 1440px) {
     html {
         scroll-behavior: smooth;
+    }
+    body{
         overflow-x: hidden;
     }
     /*Nave Bar Creation*/
     header{
-        /*background: rgb(255,255,255);
-        background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(93,93,93,1) 0%, rgba(255,255,255,1) 100%);*/
         background-color: rgba(255, 255, 255, 0.3);
         -webkit-backdrop-filter: blur(50px);
         backdrop-filter: blur(10px);
         position:fixed;
         justify-content: center;
         height: 60px;
-        width: 100%;
+        /*width: 100%;*/
+        width: 100vw;
         z-index: 90;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -4356,7 +4357,6 @@ body{
         display: none;
     }
     .navNames>ul{
-        width: 800px;
         list-style-type: none;
         right: 0;
         padding: 0;
@@ -4368,22 +4368,22 @@ body{
     .navNames>ul>li>a{
         color: black;
         text-decoration: none;
-        padding: 5px 12px;
+        padding: 5px 10px;
         display: block;
-        font-size: 15px;
+        font-size: 13px;
     }
     .FrontH{
         margin-bottom: 0;
     }
     .navNames{
-        margin-left: 500px;
+        margin-left: 550px;
     }
     .navbar{
         position: absolute;
     }
     #NavbarNames>li:hover{
         transform: scale(1.2);
-        transition: background 1s ease;
+        transition: background 1s ease-in-out;
     }
     #frontPage{
         position: relative;
@@ -4394,11 +4394,14 @@ body{
     }
     .FrontH{
         height: 850px;
-        width: 100%;
         background: black;
     }
 
     /*Background Colour Added*/
+    /*.home{
+        background: white;
+        padding: 1px;
+    }*/
     /*Google Font Added*/
     * {
         font-family: "Open Sans", sans-serif;
@@ -4421,10 +4424,8 @@ body{
     /*Front image*/
     #HomeGrid{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 155px;
-        width: 80%;
+        justify-content: space-evenly;
+        width: 100%;
         height: 700px;
     }
     #ImgF{
@@ -4444,7 +4445,7 @@ body{
         color: white;
     }
     #intoPara{
-        font-size: 15px;
+        font-size: 11px;
         color: white;
     }
     #button{
@@ -4495,7 +4496,6 @@ body{
     }
     .ContactMe{
         background: black;
-        width: 100%;
     }
 
     .contact-section {
@@ -4678,17 +4678,17 @@ body{
     }
     /*About Me*/
     .aboutMe {
-        height: 800px;
+        height: 900px;
         color: black;
     }
-    #AboutHome{
-        width: 100%;
-        background-color: white;
-    }
+
     #Heading {
         margin-top: 60px;
         display: flex;
         justify-content: center;
+    }
+    #AboutHome{
+        background-color: white;
     }
     #dis{
         display: flex;
@@ -4771,6 +4771,9 @@ body{
         width: 300px;
         height: 175px;
     }
+    .home{
+        background-color: white;
+    }
     /*<!-- Skill -->*/
     .carousel-wrapper {
         --width: 200px;
@@ -4779,7 +4782,7 @@ body{
         --ani-offset: calc(var(--width) * var(--num-items) * -1);
         --ani-speed: 20s;
 
-        width: 1515px;
+        width: 100vw;
         overflow: hidden;
         position: relative;
     }
@@ -4831,14 +4834,9 @@ body{
         justify-content: center;
         align-items: center;
     }
-    .home{
-        width: 100%;
-    }
     #Skill{
-        width: 100%;
-        margin-top: 0;
         height: 700px;
-        background: white;
+
     }
     /*Assignments*/
     #Ass{
