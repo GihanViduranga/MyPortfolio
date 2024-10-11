@@ -1,6 +1,7 @@
 html {
     scroll-behavior: smooth;
 }
+/*data-aos="fade"*/
 /*Nave Bar Creation*/
 header{
     background-color: rgba(255, 255, 255, 0.3);
@@ -3596,7 +3597,7 @@ body{
         margin-bottom: 0;
     }
     .navNames{
-        margin-left: 550px;
+        margin-left: 850px;
     }
     .navbar{
         position: absolute;
@@ -4326,7 +4327,7 @@ body{
         justify-content: center;
         height: 60px;
         /*width: 100%;*/
-        width: 100vw;
+        width: 100%;
         z-index: 90;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -4376,7 +4377,7 @@ body{
         margin-bottom: 0;
     }
     .navNames{
-        margin-left: 550px;
+        margin-left: 750px;
     }
     .navbar{
         position: absolute;
