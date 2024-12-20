@@ -138,6 +138,10 @@ header{
     margin-top: 50px;
     width: 100%;
 }
+.hu__hu__ { animation: hu__hu__ infinite 2s ease-in-out }
+@keyframes hu__hu__ {
+    50% { transform: translateY(30px) }
+}
 #AboutHome{
     background: white;
     padding: 1px;
@@ -835,7 +839,7 @@ body{
         text-align: center;
         transition: all .5s;
     }
-    /*nav ul li*/.navLI {
+    .navLI {
         display: flex;
         flex-direction: column;
         line-height: 30px;
@@ -875,7 +879,6 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        /*margin-left: 25px;*/
     }
     #ImgF>img{
         width: 220px;

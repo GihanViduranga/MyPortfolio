@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment_10</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+    }
+
+    .calculator {
+        width: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #95a5a6;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    #display {
+        width: 100%;
+        height: 50px;
+        font-size: 24px;
+        padding: 10px;
+        margin-bottom: 10px;
+        text-align: right;
+        border: none;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+    }
+
+    .buttons {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    button {
+        height: 50px;
+        font-size: 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #e0e0e0;
+        transition: background-color 0.2s;
+    }
+
+    button:hover {
+        background-color: gray;
+    }
+
+    .equals {
+        grid-column: span 2;
+        background-color: #4CAF50;
+        color: #fff;
+    }
+
+    .equals:hover {
+        background-color: #2e6b31;
+    }
+    #DEL {
+        background-color: #e74c3c;
+    }
+    #DEL:hover {
+        background-color: #dc352f;
+    }
+    #C {
+        background-color: orange;
+    }
+    #C:hover {
+        background-color: darkorange;
+    }
+</style>
+<body>
+<div class="calculator">
+    <input type="text" id="display">
+    <div class="buttons">
+        <button id="C" class="clearDisplay">C</button>
+        <button id="DEL" class="delete">DEL</button>
+        <button class="Divide">÷</button>
+        <button class="Multy">×</button>
+        <button class="Number">7</button>
+        <button class="Number">8</button>
+        <button class="Number">9</button>
+        <button class="Subtract">-</button>
+        <button class="Number">4</button>
+        <button class="Number">5</button>
+        <button class="Number">6</button>
+        <button class="Addition">+</button>
+        <button class="Number">1</button>
+        <button class="Number">2</button>
+        <button class="Number">3</button>
+        <button class="equals">=</button>
+        <button class="Number">0</button>
+        <button class="Dot">.</button>
+    </div>
+</div>
+<script src="jquery-3.7.1.min.js"></script>
+<script src="Calculator.js"></script>
+</body>
+</html>
